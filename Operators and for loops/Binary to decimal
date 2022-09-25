@@ -1,0 +1,26 @@
+mport java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+	    Scanner s = new Scanner(System.in);
+	    int n = s.nextInt();
+	   int pv = 1;
+	  
+	    int ans = 0;
+	
+	    while(n>0){
+	       
+	        ans = ans+n%10*pv;
+	        n/=10;
+	        pv=pv*2;
+	        
+	        
+	        
+	    }
+	    System.out.print(ans);
+        
+        
+	
+
+	}
+}
