@@ -1,0 +1,25 @@
+public class Solution {
+	
+	public static boolean checkMember(int n){
+        
+        // int i = 1;
+        
+        int f0 = 0; // first element of fibo..
+        int f1 = 1; // second element of fibo..
+        int j; // we will compute third element by adding f0 and f1 
+        
+        while(f0<n){
+            j = f0+f1;
+            f0 = f1;
+            f1 = j;
+        }
+        
+        if(f0 == n) { 
+            return true; 
+        } else {
+            return false;
+        }
+        
+	}
+	
+}
