@@ -1,0 +1,31 @@
+
+public class Solution {
+
+	public static char highestOccuringChar(String str) {
+		int []arr = new int[256];
+        char ans = str.charAt(0);
+        int count = 0;
+        
+        
+        
+        for(int i = 0;i<str.length();i++){
+             arr[str.charAt(i)]+=1;
+            
+        }
+        count = arr[str.charAt(0)];
+        for(int j = 1;j<str.length();j++){
+            if(count<arr[str.charAt(j)]){
+                ans = str.charAt(j);
+                count = arr[str.charAt(j)];
+            }
+            
+            
+        }
+        return ans;
+        
+        
+        
+        
+	}
+
+}
