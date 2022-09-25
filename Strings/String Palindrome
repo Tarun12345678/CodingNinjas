@@ -1,0 +1,28 @@
+public class Solution {
+
+	public static boolean isPalindrome(String str) {
+		int i = str.length()-1;
+        int j = 0;
+        while(j<=i){
+            if(str.charAt(i)!=str.charAt(j)){
+                
+                return false;
+            }
+            else{
+                i--;
+                j++;
+            }
+           
+            
+            
+            
+            
+        } 
+        return true;
+        
+        
+        
+        
+	}
+
+}
