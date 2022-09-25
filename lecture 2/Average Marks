@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Solution {
+
+
+	public static void main(String[] args){
+		Scanner d = new Scanner(System.in);
+        String str = d.nextLine();
+        char c = str.charAt(0);
+        
+        
+        int m1 = d.nextInt();
+        int m2 = d.nextInt();
+        int m3 = d.nextInt();
+        
+        int average = (m1+m2+m3)/3;
+        
+        System.out.println(c);
+        System.out.println(average);
+
+		
+	}
+
+}
