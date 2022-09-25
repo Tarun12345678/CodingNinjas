@@ -1,0 +1,18 @@
+     public class Solution {
+
+	public static void printSubstrings(String str) {
+     for(int leng = 1;leng<=str.length();leng++){
+            for(int start = 0;start<=str.length()-leng;start++){
+                int end = start+leng-1;
+                System.out.println(str.substring(start,end+1));
+                
+                
+            }
+            
+        }
+        
+        
+        
+	}
+
+}
