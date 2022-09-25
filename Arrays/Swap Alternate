@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Solution {
+    
+    public static void swapAlternate(int arr[]) {
+           int i = 0;
+        
+        while(i<arr.length-1){
+            int a = arr[i];
+            arr[i]= arr[i+1];
+            arr[i+1] = a;
+            i = i+2;
+        }
+        
+        
+    	
+    }
+}
