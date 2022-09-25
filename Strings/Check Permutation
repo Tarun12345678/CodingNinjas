@@ -1,0 +1,66 @@
+import java.util.Scanner;
+public class Solution {
+
+	public static boolean isPermutation(String str1, String str2) {
+        int n1 = str1.length();
+        int n2 = str2.length();
+        int arr[] = new int[26];
+        
+        if(n1!=n2){
+            return false;
+        }
+
+        // int i=0;
+          // for(int i =0;i<arr.length;i++){
+//               for (int j = 0;j<n1;j++){
+//                   if((int) str1.charAt(j)==arr[i]){
+//                       arr[i]  = 1;
+//                       i++;
+                      
+//                   }
+                  
+//               }
+//               for(int k = n2-1;k>=0;k--){
+//                   if((int)str2.charAt(k)==arr[i]){
+//                       arr[i] = arr[i]-1;
+                         
+                          
+//                       }
+//                   }
+                  
+                  
+              // }
+//         for(int  l = 0;l<arr.length;l++){
+//             if(arr[l]==0){
+//                 continue;
+//             }
+            
+//         }
+        
+        
+        for(int i=0;i<n1;i++){
+            arr[str1.charAt(i) - 'a']++;
+            arr[str2.charAt(i) - 'a']--;
+        }
+        
+        for(int i=0;i<26;i++){
+            if(arr[i]!=0){
+                return false;
+            }
+        }
+        
+        return true;
+		
+          
+    
+    }
+        
+		
+
+        
+        
+        
+        
+        
+        
+	}
