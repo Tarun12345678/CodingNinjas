@@ -1,0 +1,23 @@
+   import java.util.Scanner;
+public class Solution {
+   public static void arrange(int[] arr, int n) {
+     	int left=0;
+        int counter=1;
+        int right=n-1;
+        while(left<=right){
+            if(counter%2==0){
+                 arr[right]=counter;
+                counter=counter+1;
+                right=right-1;
+                
+            }
+            else {
+                arr[left]=counter;
+                counter=counter+1;
+                left=left+1;
+            }
+        }
+     
+     }
+}
+   
