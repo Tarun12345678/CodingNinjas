@@ -1,0 +1,33 @@
+public class Solution 
+{  
+	public static void rotate(int[] arr, int d) 
+    {
+    	//Your code goes here
+        int ans[] = new int[d];
+        int i = 0;
+        while(i < d)
+        {
+            ans[i] = arr[i];
+            i++;
+        }
+        
+        //rotating the array from d index...
+        i = 0;
+        while(i < arr.length - d)
+        {
+            arr[i] = arr[i + d];
+            i++;
+        }
+        
+        //storing the rotated array...
+        i = 0;
+        int k = arr.length - d;
+        while(i < d)
+        {
+            arr[k] = ans[i];
+            k++;
+            i++;
+        }
+    }
+
+}
