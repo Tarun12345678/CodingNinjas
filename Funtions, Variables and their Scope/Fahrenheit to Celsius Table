@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Solution {
+
+	public static void printFahrenheitTable(int start, int end, int step) {
+        
+                      
+        while(start<=end){
+       int celcius = (start - 32)*5/9;
+            
+        // start += step; 
+            System.out.println(start+"\t"+celcius);
+            start += step; 
+          
+            
+            
+        }
+        
+        
+
+		
+	}
+    // public static void main(String[] args){
+    //      printFahrenheitTable(0,100,20);
+
+        
+       
+        
+        
+    }
