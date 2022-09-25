@@ -1,0 +1,41 @@
+import java.util.*;
+public class Main {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int previous = sc.nextInt();
+        int k=2,current;
+		boolean dec = true;
+		while(k<=n){
+		//for(int i= 1;i<=n;i++){
+		     current = sc.nextInt();
+            k++;
+		    if(previous==current){
+		        System.out.print("false");
+		        return;
+		        
+		    }
+		    if(current < previous){
+                if(dec==false){
+		        System.out.print("false");
+		        return;
+                }
+		    }
+            else{
+                if(dec==true){
+                //System.out.print("true");
+                dec=false;
+            }
+        }
+            previous = current;	    
+        } 
+		
+         System.out.println("true");   
+            
+		    
+		    
+		}
+	
+
+	}
